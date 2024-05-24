@@ -5,11 +5,14 @@ input = sys.stdin.readline
 
 dic = {}
 n = int(input())
-for i in range(1, 1000001):
+for i in range(1, n + 1):
     idx = i
     for chr in str(i):
         idx += int(chr)
-    if not idx in dic:
+    if idx == n and (not idx in dic):
         dic[idx] = i
 
-print(dic[n])
+if n in dic:
+    print(dic[n])
+else:
+    print(0)
