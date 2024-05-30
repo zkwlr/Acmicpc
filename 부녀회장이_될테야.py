@@ -1,3 +1,4 @@
+# B1
 import sys
 
 input = sys.stdin.readline
