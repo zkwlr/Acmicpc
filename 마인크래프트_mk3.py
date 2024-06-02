@@ -19,7 +19,7 @@ for _ in range(n):
     a = input().rstrip().split()
     for height in a:
         hcount[int(height)] += 1
-hcount = dict(sorted(hcount.items()))
+# hcount = dict(sorted(hcount.items()))
 
 for h in range(257):
     time, block = 0, b  # block: flatting 후 인벤토리 안의 최종 블록 수
